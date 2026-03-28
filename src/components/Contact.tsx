@@ -1,7 +1,9 @@
 import type React from "react"
 import { useEffect, useRef, useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 export function Contact() {
+  const navigate = useNavigate()
   const [isVisible, setIsVisible] = useState(false)
   const [formState, setFormState] = useState({
     name: "",
@@ -29,8 +31,7 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log(formState)
+    navigate("/session")
   }
 
   return (

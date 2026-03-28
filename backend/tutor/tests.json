@@ -1,0 +1,26 @@
+{
+  "tests": [
+    {
+      "name": "Generate session",
+      "method": "POST",
+      "path": "/",
+      "body": {"action": "generate_session"},
+      "expectedStatus": 200,
+      "expectedBody": {"grammar": {}, "fill": {}, "writing": {}, "reading": {}},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Evaluate writing",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "action": "evaluate_writing",
+        "text": "I like playing football. It is my favorite sport. I play every weekend with my friends. It makes me happy and healthy.",
+        "prompt": "Write about your favorite hobby."
+      },
+      "expectedStatus": 200,
+      "expectedBody": {"score": 0, "feedback_ru": ""},
+      "bodyMatcher": "partial"
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 export function Hero() {
+  const navigate = useNavigate()
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -47,8 +49,8 @@ export function Hero() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <a
-            href="#contact"
+          <button
+            onClick={() => navigate("/session")}
             className="group inline-flex items-center gap-3 px-8 py-4 bg-sage text-primary-foreground text-sm tracking-widest uppercase hover:bg-sage/90 transition-all duration-500"
           >
             Начать практику
@@ -60,7 +62,7 @@ export function Hero() {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </a>
+          </button>
           <a
             href="#philosophy"
             className="inline-flex items-center gap-2 px-8 py-4 text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
