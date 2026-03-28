@@ -39,8 +39,7 @@ export function Testimonial() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          Работа с Wabi была похожа на медитацию. Они поняли, что наш дом должен поддерживать
-          благополучие семьи, а не просто красиво выглядеть. Результат — пространство, которое наконец ощущается как наше.
+          Я занималась по учебникам три года и топталась на месте. С этим тьютором за месяц начала читать статьи на английском и перестала бояться писать. Это другой уровень.
         </blockquote>
 
         {/* Attribution */}
@@ -49,8 +48,8 @@ export function Testimonial() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="text-sm tracking-widest uppercase text-primary-foreground/80">Анна и Михаил Петровы</p>
-          <p className="text-sm text-primary-foreground/60 mt-1">Резиденция в Москве</p>
+          <p className="text-sm tracking-widest uppercase text-primary-foreground/80">Мария К.</p>
+          <p className="text-sm text-primary-foreground/60 mt-1">Уровень B1, занимается 6 недель</p>
         </div>
       </div>
     </section>
