@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['DM Sans', 'DM Sans Fallback', 'system-ui', 'sans-serif'],
+				serif: ['Cormorant Garamond', 'Cormorant Garamond Fallback', 'Georgia', 'serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom Japandi colors
+				sand: 'hsl(var(--sand))',
+				sage: 'hsl(var(--sage))',
+				terracotta: 'hsl(var(--terracotta))',
+				indigo: 'hsl(var(--indigo))',
+				stone: 'hsl(var(--stone))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
